@@ -1,143 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Government Polytechnic Pune</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Government Polytechnic Pune</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-  <div class="topbar">Government of Maharashtra • Autonomous Institute</div>
 
-  <header>
-    <div class="brand">
-      <div class="logo">GPP</div>
-      <div>
-        <h1>Government Polytechnic, Pune</h1>
-        <p>शासकीय तंत्रनिकेतन, पुणे</p>
-      </div>
+<!-- TOP BAR -->
+<div class="top-bar">
+    Government of Maharashtra • Autonomous Institute
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo">
+        <div class="logo-box">GPP</div>
+        <div>
+            <h2>Government Polytechnic, Pune</h2>
+            <small>शासकीय तंत्रनिकेतन, पुणे</small>
+        </div>
     </div>
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#admission">Admission</a>
-      <a href="#facilities">Facilities</a>
-      <a href="#contact">Contact</a>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <span class="badge">Government of Maharashtra</span>
-        <h2>Learn. Innovate. Build the Future.</h2>
-        <p>Government Polytechnic, Pune is an autonomous institute providing quality diploma-level technical education and industry-oriented learning.</p>
-        <div class="buttons">
-          <a class="btn primary" href="#admission">Admission 2026–27</a>
-          <a class="btn secondary" href="#courses">Explore Courses</a>
+<!-- HERO -->
+<section class="hero">
+    <p class="tag">Government of Maharashtra</p>
+    <h1>Learn. Innovate. Build the Future.</h1>
+    <p class="hero-text">
+        Government Polytechnic, Pune is an autonomous institute providing quality diploma-level technical education and industry-oriented learning.
+    </p>
+
+    <div class="buttons">
+        <button>Admission 2026–27</button>
+        <button class="outline">Explore Courses</button>
+    </div>
+</section>
+
+<!-- NOTICE -->
+<div class="notice">
+    📢 <strong>Notice Board:</strong>
+    Admission information • Examination updates • Scholarships • Student notices
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h5>ABOUT GPP</h5>
+    <h2>Government Polytechnic, Pune</h2>
+
+    <div class="about-container">
+        <div class="about-text">
+            <p>
+                Government Polytechnic, Pune is an autonomous institute of the Government of Maharashtra, established in 1957.
+                It offers diploma programmes in multiple engineering disciplines.
+            </p>
+            <p>
+                Its vision is to develop self-reliant, versatile and innovative engineers.
+            </p>
         </div>
-      </div>
-    </section>
 
-    <section class="notice">
-      <strong>📢 Notice Board</strong>
-      <div class="ticker">Admission information • Examination updates • Scholarships • Student notices</div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section-heading">
-        <span>ABOUT GPP</span>
-        <h2>Government Polytechnic, Pune</h2>
-      </div>
-      <div class="about-grid">
-        <div>
-          <p>Government Polytechnic, Pune is an autonomous institute of the Government of Maharashtra, established in 1957. The institute has a large campus at Ganeshkhind, Pune and offers diploma programmes in multiple engineering and technical disciplines.</p>
-          <p>Its vision is to develop self-reliant, versatile, innovative and quality-conscious engineers for the betterment of society.</p>
-        </div>
         <div class="stats">
-          <div><b>1957</b><span>Established</span></div>
-          <div><b>10</b><span>Diploma programmes</span></div>
-          <div><b>28</b><span>Acres campus</span></div>
-          <div><b>120 NEP</b><span>Curriculum</span></div>
+            <div class="card">1957<br><span>Established</span></div>
+            <div class="card">10<br><span>Programmes</span></div>
+            <div class="card">28<br><span>Acres</span></div>
+            <div class="card">NEP<br><span>Curriculum</span></div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section id="courses" class="section alt">
-      <div class="section-heading">
-        <span>ACADEMICS</span>
-        <h2>Diploma Programmes</h2>
-      </div>
-      <div class="cards">
-        <article class="card"><div class="icon">🏗️</div><h3>Civil Engineering</h3><p>Intake: 120</p></article>
-        <article class="card"><div class="icon">⚡</div><h3>Electrical Engineering</h3><p>Intake: 60 + 60 minority</p></article>
-        <article class="card"><div class="icon">📡</div><h3>Electronics & Telecommunication</h3><p>Intake: 60 + 60 minority</p></article>
-        <article class="card"><div class="icon">⚙️</div><h3>Mechanical Engineering</h3><p>Intake: 180</p></article>
-        <article class="card"><div class="icon">🔬</div><h3>Metallurgy Engineering</h3><p>Intake: 60</p></article>
-        <article class="card"><div class="icon">💻</div><h3>Computer Engineering</h3><p>Intake: 180</p></article>
-        <article class="card"><div class="icon">🖥️</div><h3>Information Technology</h3><p>Intake: 60</p></article>
-        <article class="card"><div class="icon">👗</div><h3>Dress Designing & Garment Manufacturing</h3><p>Intake: 30</p></article>
-      </div>
-    </section>
+<!-- COURSES -->
+<section id="courses">
+    <h5>ACADEMICS</h5>
+    <h2>Diploma Programmes</h2>
 
-    <section id="admission" class="section">
-      <div class="section-heading">
-        <span>ADMISSIONS</span>
-        <h2>Admission 2026–27</h2>
-      </div>
-      <div class="admission-box">
+    <div class="grid">
+        <div><i class="fa-solid fa-building"></i><h3>Civil Engineering</h3><p>Intake: 120</p></div>
+        <div><i class="fa-solid fa-bolt"></i><h3>Electrical Engineering</h3><p>Intake: 120</p></div>
+        <div><i class="fa-solid fa-satellite-dish"></i><h3>ENTC</h3><p>Intake: 120</p></div>
+        <div><i class="fa-solid fa-gears"></i><h3>Mechanical</h3><p>Intake: 180</p></div>
+        <div><i class="fa-solid fa-flask"></i><h3>Metallurgy</h3><p>Intake: 60</p></div>
+        <div><i class="fa-solid fa-laptop-code"></i><h3>Computer</h3><p>Intake: 180</p></div>
+        <div><i class="fa-solid fa-desktop"></i><h3>IT</h3><p>Intake: 60</p></div>
+        <div><i class="fa-solid fa-shirt"></i><h3>Dress Design</h3><p>Intake: 30</p></div>
+    </div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+    <h5>ADMISSIONS</h5>
+    <h2>Admission 2026–27</h2>
+
+    <div class="admission-box">
         <div>
-          <h3>Centralized Admission Process (CAP)</h3>
-          <p>Admissions to Government Polytechnic, Pune are carried out through the centralized admission process of the Directorate of Technical Education, Maharashtra.</p>
-          <ul>
-            <li>Post-SSC Diploma – First Year</li>
-            <li>Direct Second Year Diploma</li>
-            <li>Check eligibility and required documents before applying.</li>
-          </ul>
+            <h3>Centralized Admission Process (CAP)</h3>
+            <ul>
+                <li>Post-SSC Diploma</li>
+                <li>Direct Second Year</li>
+                <li>Check eligibility before applying</li>
+            </ul>
         </div>
-        <a class="btn primary" href="https://gppune.ac.in/" target="_blank">Official Website ↗</a>
-      </div>
-    </section>
 
-    <section id="facilities" class="section alt">
-      <div class="section-heading">
-        <span>CAMPUS</span>
-        <h2>Facilities</h2>
-      </div>
-      <div class="facility-grid">
-        <div>📚 <b>Library</b><small>Learning resources and study space</small></div>
-        <div>🧪 <b>Laboratories</b><small>Department-specific practical facilities</small></div>
-        <div>🏠 <b>Hostels</b><small>Student accommodation facilities</small></div>
-        <div>🏋️ <b>Gymkhana</b><small>Sports and student activities</small></div>
-        <div>🍽️ <b>Canteen & Mess</b><small>Campus food facilities</small></div>
-        <div>💡 <b>Innovation</b><small>Entrepreneurship and incubation support</small></div>
-      </div>
-    </section>
-
-    <section class="section vision">
-      <div class="quote">“To develop self-reliant, versatile, innovative, quality conscious engineers for betterment of society.”</div>
-      <div class="mission"><b>Mission</b><span>Updated curriculum</span><span>State-of-the-art infrastructure</span><span>Industry alliances</span><span>e-Governance</span><span>Faculty development</span></div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <div>
-      <h3>Government Polytechnic, Pune</h3>
-      <p>Ganeshkhind, University Road, Shivajinagar,<br>Pune – 411016, Maharashtra, India</p>
+        <button>Official Website ↗</button>
     </div>
-    <div>
-      <h3>Contact</h3>
-      <p>☎ +91-020-25559200 / 25559201<br>✉ principal@gppune.ac.in</p>
-    </div>
-    <div>
-      <h3>Quick Links</h3>
-      <p><a href="#courses">Courses</a> • <a href="#admission">Admissions</a> • <a href="#facilities">Facilities</a></p>
-    </div>
-  </footer>
+</section>
 
-  <div class="copyright">© <span id="year"></span> Government Polytechnic, Pune • Demo website design</div>
-  <script src="script.js"></script>
+<!-- FACILITIES -->
+<section id="facilities">
+    <h5>CAMPUS</h5>
+    <h2>Facilities</h2>
+
+    <div class="grid">
+        <div><i class="fa-solid fa-book"></i><h3>Library</h3></div>
+        <div><i class="fa-solid fa-flask"></i><h3>Labs</h3></div>
+        <div><i class="fa-solid fa-house"></i><h3>Hostel</h3></div>
+        <div><i class="fa-solid fa-dumbbell"></i><h3>Gymkhana</h3></div>
+        <div><i class="fa-solid fa-utensils"></i><h3>Canteen</h3></div>
+        <div><i class="fa-solid fa-lightbulb"></i><h3>Innovation</h3></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <p>© 2026 Government Polytechnic Pune</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
