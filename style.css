@@ -1,4 +1,3 @@
-```css
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,135 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+}
+
+.top-bar {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+/* HEADER */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-box {
+    background: #f4b400;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 60px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1");
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #f4b400;
+}
+
+.outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* NOTICE */
+.notice {
+    background: #fff3cd;
+    padding: 10px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grid div:hover {
+    transform: translateY(-8px);
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ADMISSION */
+.admission-box {
+    display: flex;
+    justify-content: space-between;
+    background: #eaf2fb;
+    padding: 30px;
+    border-left: 5px solid #0b3d91;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
     background-color: #f4f6f8;
     color: #333;
 }
@@ -86,4 +213,3 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
-```
